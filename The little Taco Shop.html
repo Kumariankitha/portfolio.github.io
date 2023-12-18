@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="author" content="Dave Gray">
+        <meta name="description" content="The official website for The little taco shop">
+        <title>The little Taco Shop</title>
+        <link rel="icon" href="http://127.0.0.1:5500/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./The little Taco Shop_files/style.css"> 
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to The little Taco Shop</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="http://127.0.0.1:5500/#about">About <abbr title="The little Taco Shop">LTS</abbr></a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/#menu"> Our Menu</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/hours.html">Store hours</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/contact.html">contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <figure>
+                <img src="./The little Taco Shop_files/drink-taco_hero.jpg" alt="Tacos and a Drink" title="We love tacos" width="400" height="267">
+                <figcaption>
+                    Tacos and Drink
+                </figcaption>
+            </figure>
+        </header>
+        <hr>
+        <main>
+            <article id="about">
+                <h2>About <abbr title="The little Taco Shop">LTS</abbr></h2>
+                <p>
+                    <abbr title="The little Taco Shop">LTS</abbr> 
+                    was found in <time datetime="2022">2022</time>. Our Shop 
+                    was built from a <strong>love of tacos</strong> 🌮🌮🌮. we hope our shop adds 
+                    a unique and intresting
+                    place to our little town.
+                </p>   
+                <aside>
+                    <h3>Taco Trivial</h3>
+                    <details>
+                        <summary>When did tacos first appear in the united Stated?</summary>
+                        <p>
+                            Jerrey M. Pilcher, taco historian and professor of history at the University of<br>
+                            Minnesota, says the earliest metion of tacos in the united states are in a newspaper from <br>
+                            <time datetime="1905">1905</time>.
+                        </p>
+                    </details>
+                </aside>         
+            </article>
+            <hr>
+            <article id="menu">
+                <h2>Our Menu</h2>
+                <table>
+                    <caption>Our Tacos</caption>
+                    <thead>
+                        <tr>
+                            <th>Tacos</th>
+                            <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="3">
+                                Crunchy
+                            </th>
+                            <td>1</td>
+                            <td>$1.50</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>$2.50</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>$3.25</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="3">
+                                Soft
+                            </th>
+                            <td>1</td>
+                            <td>$2.00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>$3.50</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>$4.50</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                Chips &amp; Salsa $2
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <br>
+                <p>
+                    <a href="http://127.0.0.1:5500/#">Back To Top</a>
+                </p>
+                
+            </article>
+        </main>
+        <hr>
+        <footer>
+            <p>Copyright © The little Taco Shop</p>
+        </footer>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
